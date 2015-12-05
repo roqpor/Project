@@ -1,4 +1,4 @@
-from csv
+import csv
 from IPyhon.core.display import HTML
 from nvd3 import multiBarChart
 chart = multiBarChart(width = 1024, heiht = 600, x_axis_format = None)
