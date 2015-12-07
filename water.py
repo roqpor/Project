@@ -22,7 +22,7 @@ def xxx():
                 water[i[1]] = dict()
                 for a, each in enumerate(lst):
                     water[i[1]][each] = i[a+2]
-    abc = coal['2551'].values()
+    abc = water['2551'].values()
     abc = [float(i) for i in abc]
     return abc
 print(xxx())
