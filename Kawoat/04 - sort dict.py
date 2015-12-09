@@ -35,5 +35,4 @@ def sort_dict(kind, year):
             water1 = OrderedDict(sorted(water[year].items()))
             water1 = [float(i) for i in water1.values()]
             return water1
-
 print(sort_dict(input(), input()))
