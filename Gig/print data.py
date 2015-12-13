@@ -4,7 +4,8 @@ with open('csv2.csv') as file:
     coal = {}
     gas = {}
     water = {}
-    lst = ['jan', 'feb', 'mar', 'apr', 'may', 'june', 'july', 'aug', 'sep', 'oct', 'nov', 'dec', 'elect per year', 'price', 'capital']
+    lst = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', \
+           'september', 'october', 'november', 'december', 'electric per year', 'price', 'capital']
     for num, i in enumerate(stream):
         if num == 0:
             continue
@@ -28,7 +29,7 @@ with open('csv2.csv') as file:
         print('month', ':', month)
         print('year', ':', year)
         print('productivity', ':', coal[year][month], 'million units')
-        print('electric per year', ':', coal[year]['elect per year'], 'million units')
+        print('electric per year', ':', coal[year]['electric per year'], 'million units')
         print('price', ':', coal[year]['price'], 'per unit')
         print('cost per year', ':', coal[year]['capital'], 'million bath')
     elif kind == 'gas':
@@ -36,7 +37,7 @@ with open('csv2.csv') as file:
         print('month', ':', month)
         print('year', ':', year)
         print('productivity', ':', gas[year][month], 'million units')
-        print('electric per year', ':', gas[year]['elect per year'], 'million units')
+        print('electric per year', ':', gas[year]['electric per year'], 'million units')
         print('price', ':', gas[year]['price'], 'per unit')
         print('cost per year', ':', gas[year]['capital'], 'million bath')
     elif kind == 'water':
@@ -44,7 +45,7 @@ with open('csv2.csv') as file:
         print('month', ':', month)
         print('year', ':', year)
         print('productivity', ':', water[year][month], 'million units')
-        print('electric per year', ':', water[year]['elect per year'], 'million units')
+        print('electric per year', ':', water[year]['electric per year'], 'million units')
         print('price', ':', water[year]['price'], 'per unit')
         print('cost per year', ':', water[year]['capital'], 'million bath')
         
