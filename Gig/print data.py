@@ -1,5 +1,5 @@
 import csv
-with open('csv2.csv') as file:
+with open('data.csv') as file:
     stream = csv.reader(file)
     coal = {}
     gas = {}
