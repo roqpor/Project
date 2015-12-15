@@ -1,7 +1,7 @@
 def return_list(kind, year):
     from collections import OrderedDict
     import csv
-    with open('data.csv') as file:
+    with open('data for graph.csv') as file:
         stream = csv.reader(file)
         coal = {}
         gas = {}
