@@ -28,3 +28,4 @@ with open('data.csv') as file:
     print('electric per year', ':', kindd[year]['elect per year'])
     print('price', ':', kindd[year]['price'])
     print('capital', ':', kindd[year]['capital'])
+    
