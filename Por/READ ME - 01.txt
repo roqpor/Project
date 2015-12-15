@@ -1,0 +1,3 @@
+import data from csv file
+create 3 dictionary
+add value in each dictionary
